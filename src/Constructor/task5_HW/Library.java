@@ -26,19 +26,18 @@ public class Library {
 
 
     public Book[] getSimilarIdBooks(Book[] books) {
-        int count = 0; // Количество найденных совпадений
-        Book[] newArrBooks = new Book[books.length]; // Максимально возможный размер
+        int count = 0;
+        Book[] newArrBooks = new Book[books.length];
 
         for (int i = 0; i < books.length; i++) {
-            for (int j = i + 1; j < books.length; j++) { // Исключаем самосравнение
+            for (int j = i + 1; j < books.length; j++) {
                 if (books[i].id == books[j].id) {
-                    newArrBooks[count++] = books[i]; // Записываем и увеличиваем индекс
+                    newArrBooks[count++] = books[i];
                     newArrBooks[count++] = books[j];
                 }
             }
         }
 
-        // Создаем массив нужного размера без null
         Book[] result = new Book[count];
         System.arraycopy(newArrBooks, 0, result, 0, count);
 
