@@ -24,17 +24,37 @@ public class Library {
         return 0;
     }
 
-    public static Book getSimilarIdBooks (Book[] books) {
-        int bookId1 = 0;
-        int bookId2 = 0;
-        for (Book book : books) {
-            bookId1 = book.id;
-            for (Book book1 : books) {
-                bookId2 = book1.id;
-                if (bookId1 == bookId2) return book1;
+
+    public Book[] getSimilarIdBooks(Book[] books) {
+        int count = 0; // Количество найденных совпадений
+        Book[] newArrBooks = new Book[books.length]; // Максимально возможный размер
+
+        for (int i = 0; i < books.length; i++) {
+            for (int j = i + 1; j < books.length; j++) { // Исключаем самосравнение
+                if (books[i].id == books[j].id) {
+                    newArrBooks[count++] = books[i]; // Записываем и увеличиваем индекс
+                    newArrBooks[count++] = books[j];
+                }
             }
         }
-        return null;
 
+        // Создаем массив нужного размера без null
+        Book[] result = new Book[count];
+        System.arraycopy(newArrBooks, 0, result, 0, count);
+
+        return result;
     }
+
+
+    public void showInfo (Book book){
+        System.out.println(book.id + ", " + book.bookName + ", " + book.price +", " + book.genre +", " + book.publicDate);
+    }
+
+    public void showAll(Book[] books){
+        for (Book book : books) {
+            showInfo(book);
+        }
+            
+    }
+    
 }

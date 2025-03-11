@@ -15,6 +15,11 @@ public class Main {
         Library library2 = new Library(2,"Love", "a-13", books);
         Library library3 = new Library(4,"Love", "a-1", books);
 
+        System.out.println("Книги у которых одинаковые ID: ");
+        Book[] similarIdBooks = library1.getSimilarIdBooks(books);
+        library2.showAll(similarIdBooks);
+
+
 
 
 
