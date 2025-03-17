@@ -20,9 +20,6 @@ public class Main {
         library2.showAll(similarIdBooks);
 
 
-
-
-
     }
 }
 

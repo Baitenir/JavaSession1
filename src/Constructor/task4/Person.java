@@ -15,31 +15,34 @@ public class Person {
         this.phone = phone;
     }
 
+    public Person (){
+
+    }
+
     public String ShowPeople() {
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", work='" + work + '\'' +
-                ", salary=" + salary +
-                ", phone='" + phone + '\'' +
+        return "Person " +
+                "name: '" + name + '\'' +
+                ", age: " + age +
+                ", work: '" + work + '\'' +
+                ", salary: " + salary +
+                ", phone: '" + phone + '\'' +
                 '}';
     }
 
-    public static Person getMaxSalaryPerson(Person[] people) {
+    public Person getPersonBiggerSalary(Person[] people){
         Person maxSalaryPerson = people[0];
-        for (int i = 1; i < people.length; i++) {
-            if (people[i].salary > maxSalaryPerson.salary ) maxSalaryPerson = people[i];
+
+        for (Person person : people) {
+            if (person.salary > maxSalaryPerson.salary) maxSalaryPerson = person;
         }
         return maxSalaryPerson;
     }
 
-    public static Person getMinSalaryPerson(Person[] people) {
+    public Person getPersonWithSmallSalary(Person[] people){
         Person minSalaryPerson = people[0];
         for (Person person : people) {
-            if (person.salary < minSalaryPerson.salary) minSalaryPerson = person;
+            if (minSalaryPerson.salary < person.salary) minSalaryPerson = person;
         }
         return minSalaryPerson;
     }
-
-
 }

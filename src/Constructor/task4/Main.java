@@ -1,7 +1,6 @@
 package Constructor.task4;
 
-import static Constructor.task4.Person.getMaxSalaryPerson;
-import static Constructor.task4.Person.getMinSalaryPerson;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -10,23 +9,21 @@ public class Main {
         Person person3 = new Person("Lopez", 24, "Artist", 800,"Xiaomi 12 Note");
         Person person4 = new Person("Joni", 30, "Taxi driver", 2300,"Iphone 12 pro");
         Person person5 = new Person("Sadyr", 43, "Programmer", 1700,"Poco X6");
+        Person person = new Person();
 
         Person[] people = new Person[] {person1, person2, person3, person4, person5};
         for (Person pepe : people) {
             System.out.println(pepe.ShowPeople());
         }
-        System.out.println("_____________________________");
-        Person maxSalaryPerson = getMaxSalaryPerson(people);
-        System.out.println("This person have more big salary: "+maxSalaryPerson.ShowPeople());
-
-        System.out.println("_____________________________");
-        Person minSalaryPerson = getMinSalaryPerson(people);
-        System.out.println("This person have more small salary: "+minSalaryPerson.ShowPeople());
-
-        System.out.println("_____________________________");
-        System.out.println("This person have a more expensive phone: "+ person1.ShowPeople());
+        System.out.println("\nPerson who have more big salary: ");
+        System.out.println(person.getPersonBiggerSalary(people).ShowPeople());
+        System.out.println("_______________________________");
+        System.out.println(person.getPersonWithSmallSalary(people).ShowPeople());
+        System.out.println("\nperson who have a most expensive phone: ");
+        System.out.println(person1.ShowPeople());
 
     }
+
 }
 
 //4-task
