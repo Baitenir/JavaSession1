@@ -67,7 +67,6 @@ public class Main {
             System.out.println("Bye Bye");
         }
 
-        //todo Baitenir
 
     }
 }
