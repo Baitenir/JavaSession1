@@ -70,6 +70,8 @@ public class Main {
 
     }
 }
+
+
 //Создайте класс Technique с полями(name, brand, version) и
 //метод turnOnOff(); возвращает "name + включена" или
 //"name + выключена"
