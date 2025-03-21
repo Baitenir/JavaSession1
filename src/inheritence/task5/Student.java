@@ -56,10 +56,15 @@ public class Student extends Apartment{
         }
         return canLives;
     }
-
-    public Student changeInfo (){
-        return null;
-    }
+    // todo update method
+//    public Student changeInfo (Student[] students, Student updateStudent){
+//        for (Student student : students) {
+//            if (student.getFullName() != null && updateStudent.getFullName().equals(student.fullName)){
+//
+//            }
+//        }
+//        return null;
+//    }
 
     public void showInfoStudent() {
         System.out.println("______________________________________");

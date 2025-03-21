@@ -1,4 +1,4 @@
-package accessModifier.task1;
+package accessModifier.task;
 
 import java.util.Arrays;
 import java.util.Scanner;

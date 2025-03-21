@@ -1,4 +1,4 @@
-package accessModifier.task1;
+package accessModifier.task;
 import java.time.LocalDate;
 import java.util.Scanner;
 

@@ -18,36 +18,39 @@ public class Chat {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public boolean isNew() {
         return isNew;
     }
+
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
     public LocalDate getDateOfIssue() {
         return dateOfIssue;
     }
+
     public void setDateOfIssue(LocalDate dateOfIssue) {
         this.dateOfIssue = dateOfIssue;
     }
+
     public String getDesignColor() {
         return designColor;
     }
+
     public void setDesignColor(String designColor) {
         this.designColor = designColor;
     }
 
-    public String getChatName(){
-        return "Name chat: " + name+ ", color: "+ designColor;
+    public String getChatName() {
+        return "Name chat: " + name + ", color: " + designColor;
     }
-//    public boolean getIsNewChat(){
-//
-//        if (dateOfIssue ) {
-//
-//        }
-//        return false;
-//    }
+    public boolean getIsNewChat(){
+        return false; //todo i'll come back
+    }
 }
