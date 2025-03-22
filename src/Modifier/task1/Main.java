@@ -1,4 +1,4 @@
-package accessModifier.task1;
+package Modifier.task1;
 
 public class Main {
     public static void main(String[] args) {

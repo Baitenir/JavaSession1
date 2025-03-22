@@ -4,7 +4,11 @@ import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
-      //  Telegram telegram = new Telegram("Sadyk", false, LocalDate.);
+      Instagram instagram = new Instagram("Gomes", false, LocalDate.of(2002,2,6), "red");
+      Instagram slack = new Instagram("Tailer", true, LocalDate.of(2012,6,26), "white");
+      Instagram telegram = new Instagram("Gomes", false, LocalDate.of(2022,11,11), "blue");
+      Instagram whatsapp = new Instagram("Gomes", false, LocalDate.of(2007,7,9), "red");
+
     }
 }
 

@@ -1,4 +1,4 @@
-package accessModifier.task;
+package Modifier.task;
 
 public class Electronics extends Product{
     private long id;

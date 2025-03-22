@@ -3,10 +3,10 @@ package inheritence.task4;
 import java.time.LocalDate;
 
 public class Chat {
-    protected String name;
-    protected boolean isNew;
-    protected LocalDate dateOfIssue;
-    protected String designColor;
+    String name;
+    boolean isNew;
+    LocalDate dateOfIssue;
+    String designColor;
 
     public Chat(String name, boolean isNew, LocalDate dateOfIssue, String designColor) {
         this.name = name;
@@ -50,7 +50,9 @@ public class Chat {
     public String getChatName() {
         return "Name chat: " + name + ", color: " + designColor;
     }
+
     public boolean getIsNewChat(){
+
         return false; //todo i'll come back
     }
 }

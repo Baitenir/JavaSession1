@@ -1,4 +1,4 @@
-package accessModifier.task1;
+package Modifier.task1;
 
 public class BankAccount {
     private String accountNumber;
